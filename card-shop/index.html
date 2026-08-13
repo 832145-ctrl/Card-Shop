@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Shop</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="lib/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>Card Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <section class="add-product">
+            <h2>Add Card</h2>
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="Card Name" required>
+                <input type="number" id="product-price" placeholder="Card Price" required>
+                <input type="file" id="product-image" accept="image/*" required>
+                <button type="submit">Add Card</button>
+            </form>
+        </section>
+        <section class="products">
+            <h2>Cards</h2>
+            <div class="product-list" id="product-list">
+                <!-- Cards will be loaded here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Card Shop</p>
+    </footer>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

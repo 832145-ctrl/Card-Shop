@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productDetail = document.getElementById('product-detail');
 
-    // Sample card data
+    // Sample product data
     const products = JSON.parse(localStorage.getItem('products')) || [
-        { id: 1, name: 'Card 1', price: 10.00, image: 'https://via.placeholder.com/150', description: 'Description for Card 1' },
-        { id: 2, name: 'Card 2', price: 20.00, image: 'https://via.placeholder.com/150', description: 'Description for Card 2' },
-        { id: 3, name: 'Card 3', price: 30.00, image: 'https://via.placeholder.com/150', description: 'Description for Card 3' },
-        { id: 4, name: 'Card 4', price: 40.00, image: 'https://via.placeholder.com/150', description: 'Description for Card 4' },
+        { id: 1, name: 'Product 1', price: 10.00, image: 'https://via.placeholder.com/150', description: 'Description for Product 1' },
+        { id: 2, name: 'Product 2', price: 20.00, image: 'https://via.placeholder.com/150', description: 'Description for Product 2' },
+        { id: 3, name: 'Product 3', price: 30.00, image: 'https://via.placeholder.com/150', description: 'Description for Product 3' },
+        { id: 4, name: 'Product 4', price: 40.00, image: 'https://via.placeholder.com/150', description: 'Description for Product 4' },
     ];
 
-    // Get card ID from URL
+    // Get product ID from URL
     const urlParams = new URLSearchParams(window.location.search);
     const productId = parseInt(urlParams.get('id'));
 
-    // Find card by ID
+    // Find product by ID
     const product = products.find(p => p.id === productId);
 
-    // Display card detail
+    // Display product detail
     if (product) {
         productDetail.innerHTML = `
             <div>
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     } else {
-        productDetail.innerHTML = '<p>Card not found.</p>';
+        productDetail.innerHTML = '<p>Product not found.</p>';
     }
 
     // Add to cart function

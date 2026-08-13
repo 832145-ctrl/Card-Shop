@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const productList = document.getElementById('product-list');
     const addProductForm = document.getElementById('add-product-form');
 
-    // Sample card data
+    // Sample product data
     let products = JSON.parse(localStorage.getItem('products')) || [
-        { id: 1, name: 'Card 1', price: 10.00, image: 'https://via.placeholder.com/150' },
-        { id: 2, name: 'Card 2', price: 20.00, image: 'https://via.placeholder.com/150' },
-        { id: 3, name: 'Card 3', price: 30.00, image: 'https://via.placeholder.com/150' },
-        { id: 4, name: 'Card 4', price: 40.00, image: 'https://via.placeholder.com/150' },
+        { id: 1, name: 'Product 1', price: 10.00, image: 'https://via.placeholder.com/150' },
+        { id: 2, name: 'Product 2', price: 20.00, image: 'https://via.placeholder.com/150' },
+        { id: 3, name: 'Product 3', price: 30.00, image: 'https://via.placeholder.com/150' },
+        { id: 4, name: 'Product 4', price: 40.00, image: 'https://via.placeholder.com/150' },
     ];
 
-    // Display cards
+    // Display products
     const displayProducts = () => {
         productList.innerHTML = '';
         products.forEach(product => {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Add card function
+    // Add product function
     addProductForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const name = document.getElementById('product-name').value;

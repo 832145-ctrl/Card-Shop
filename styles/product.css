@@ -1,10 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #000;
-    color: #fff;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 #particles-js {
@@ -15,14 +15,16 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     color: #fff;
     padding: 1rem;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 nav {
@@ -33,6 +35,7 @@ nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
 main {
@@ -41,13 +44,15 @@ main {
 
 .product-detail {
     margin: 2rem 0;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 1rem;
-    border-radius: 5px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .product-detail h2 {
     margin-top: 0;
+    color: #ff9a9e;
 }
 
 .product-detail-content {
@@ -58,6 +63,7 @@ main {
 .product-detail-content img {
     max-width: 50%;
     height: auto;
+    border-radius: 5px;
 }
 
 .product-detail-content div {
@@ -66,29 +72,37 @@ main {
 
 .product-detail-content h3 {
     margin: 0.5rem 0;
-    color: #fff;
+    color: #333;
 }
 
 .product-detail-content p {
     margin: 0.5rem 0;
-    color: #fff;
+    color: #666;
 }
 
 .product-detail-content button {
-    background: #fff;
-    color: #000;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s;
     margin-top: 1rem;
 }
 
+.product-detail-content button:hover {
+    transform: scale(1.05);
+}
+
 footer {
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     color: #fff;
     text-align: center;
     padding: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
